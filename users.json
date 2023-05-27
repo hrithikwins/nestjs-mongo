@@ -1,0 +1,18 @@
+{
+    "_id": "h1llo",
+    "username": "h1llo",
+    "name": "h1llo",
+    "address": "h1llo",
+    "email": "h1llo",
+    "photoUrl": "h1llo",
+    "phoneNumber": 987654321,
+    "dateOfBirth": "h1llo",
+    "tribes": ["tribe1", "tribe2"],
+    "dailyTimeSpent": "h1llo",
+    "monthlyTimeSpent": "h1llo",
+    "referrals": ["referrals"],
+    "coins": "h1llo",
+    "totalVibes": "h1llo",
+    "tribeAnalyser": "h1llo",
+    "totalConnections": "h1llo"
+}

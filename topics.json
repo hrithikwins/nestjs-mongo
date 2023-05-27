@@ -1,0 +1,209 @@
+[
+  { "_id": "5f7a3c8c6a5a5f09c9f5c24c", "name": "Development", "__v": 9 },
+  { "_id": "5f7a3c8c6a5a5f09c9f5c24d", "name": "Web Development", "__v": 5 },
+  { "_id": "5f7a3c8c6a5a5f09c9f5c24e", "name": "Data Science", "__v": 9 },
+  { "_id": "5f7a3c8c6a5a5f09c9f5c24f", "name": "Mobile Development", "__v": 6 },
+  { "_id": "5f7a3c8c6a5a5f09c9f5c250", "name": "Programming Languages", "__v": 2 },
+  { "_id": "5f7a3c8c6a5a5f09c9f5c251", "name": "Game Development", "__v": 5 },
+  { "_id": "5f7a3c8c6a5a5f09c9f5c252", "name": "Design & Development", "__v": 9 },
+  { "_id": "5f7a3c8c6a5a5f09c9f5c253", "name": "Software Testing", "__v": 0 },
+  { "_id": "5f7a3c8c6a5a5f09c9f5c254", "name": "Software Engineering", "__v": 8 },
+  { "_id": "5f7a3c8c6a5a5f09c9f5c255", "name": "Software Development Tools", "__v": 9 },
+  { "_id": "5f7a3c8c6a5a5f09c9f5c256", "name": "No-Code Development", "__v": 1 },
+  { "_id": "5f7a3c8c6a5a5f09c9f5c257", "name": "Business", "__v": 5 },
+  { "_id": "5f7a3c8c6a5a5f09c9f5c258", "name": "Entrepreneurship", "__v": 4 },
+  { "_id": "5f7a3c8c6a5a5f09c9f5c259", "name": "Communication", "__v": 5 },
+  { "_id": "5f7a3c8c6a5a5f09c9f5c25a", "name": "Management", "__v": 4 },
+  { "_id": "5f7a3c8c6a5a5f09c9f5c25b", "name": "Sales", "__v": 0 },
+  { "_id": "5f7a3c8c6a5a5f09c9f5c25c", "name": "Business Strategy", "__v": 9 },
+  { "_id": "5f7a3c8c6a5a5f09c9f5c25d", "name": "Operations", "__v": 7 },
+  { "_id": "5f7a3c8c6a5a5f09c9f5c25e", "name": "Project Management", "__v": 5 },
+  { "_id": "5f7a3c8c6a5a5f09c9f5c25f", "name": "Business Law", "__v": 4 },
+  { "_id": "5f7a3c8c6a5a5f09c9f5c260", "name": "Analytics & Intelligence", "__v": 2 },
+  { "_id": "5f7a3c8c6a5a5f09c9f5c261", "name": "Cyber Security", "__v": 1 },
+  {
+    "_id": "1",
+    "name": "Analytics & Intelligence",
+    "__v": 0
+  },
+  {
+    "_id": "2",
+    "name": "Human Resources",
+    "__v": 0
+  },
+  {
+    "_id": "3",
+    "name": "Industry",
+    "__v": 0
+  },
+  {
+    "_id": "4",
+    "name": "E-Commerce",
+    "__v": 0
+  },
+  {
+    "_id": "5",
+    "name": "Media",
+    "__v": 0
+  },
+  {
+    "_id": "6",
+    "name": "Real Estate",
+    "__v": 0
+  },
+  {
+    "_id": "7",
+    "name": "Other Business",
+    "__v": 0
+  },
+  {
+    "_id": "8",
+    "name": "Finance & Accounting",
+    "__v": 0
+  },
+  {
+    "_id": "9",
+    "name": "Accounting & Bookkeeping",
+    "__v": 0
+  },
+  {
+    "_id": "10",
+    "name": "Compliance",
+    "__v": 0
+  },
+  {
+    "_id": "11",
+    "name": "Cryptocurrency & Blockchain",
+    "__v": 0
+  },
+  {
+    "_id": "12",
+    "name": "Economics",
+    "__v": 0
+  },
+  {
+    "_id": "13",
+    "name": "Finance & Exam Prep",
+    "__v": 0
+  },
+  {
+    "_id": "14",
+    "name": "Modeling & Analysis",
+    "__v": 0
+  },
+  {
+    "_id": "15",
+    "name": "Investing & Trading",
+    "__v": 0
+  },
+  {
+    "_id": "16",
+    "name": "Money Management Tools",
+    "__v": 0
+  },
+  {
+    "_id": "17",
+    "name": "Taxes",
+    "__v": 0
+  },
+  {
+    "_id": "18",
+    "name": "IT & Software",
+    "__v": 0
+  },
+  {
+    "_id": "19",
+    "name": "IT Certifications",
+    "__v": 0
+  },
+  {
+    "_id": "20",
+    "name": "Network & Security",
+    "__v": 0
+  },
+  {
+    "_id": "21",
+    "name": "Hardware",
+    "__v": 0
+  },
+  {
+    "_id": "22",
+    "name": "Systems & Servers",
+    "__v": 0
+  },
+  {
+    "_id": "23",
+    "name": "Office Productivity",
+    "__v": 0
+  },
+  {
+    "_id": "24",
+    "name": "Microsoft",
+    "__v": 0
+  },
+  {
+    "_id": "25",
+    "name": "Apple",
+    "__v": 0
+  },
+  {
+    "_id": "26",
+    "name": "Google",
+    "__v": 0
+  },
+  {
+    "_id": "27",
+    "name": "SAP",
+    "__v": 0
+  },
+  {
+    "_id": "28",
+    "name": "Oracle",
+    "__v": 0
+  },
+  {
+    "_id": "29",
+    "name": "Other Office Productivity",
+    "__v": 0
+  },
+  {
+    "_id": "30",
+    "name": "Personal Development",
+    "__v": 0
+  },
+  {
+    "_id": "31",
+    "name": "Personal Transformation",
+    "__v": 0
+  },
+  {
+    "_id": "32",
+    "name": "Personal Productivity",
+    "__v": 0
+  },
+  {
+    "_id": "33",
+    "name": "Leadership",
+    "__v": 0
+  },
+  {
+    "_id": "34",
+    "name": "Career Development",
+    "__v": 0
+  },
+  {
+    "_id": "35",
+    "name": "Parenting & Relationships",
+    "__v": 0
+  },
+  {
+    "_id": "36",
+    "name": "Happiness",
+    "__v": 0
+  },
+  {
+    "_id": "37",
+    "name": "Esoteric Practices",
+    "__v": 0
+  }
+]
