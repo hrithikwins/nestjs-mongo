@@ -67,5 +67,5 @@ export class Update${SCHEMA_NAME}Dto extends OmitType(Create${SCHEMA_NAME}Dto, [
 rm src/${SCHEMA_LOWCASE}s/dto/create-$SCHEMA_LOWCASE.dto.spec.ts
 rm src/${SCHEMA_LOWCASE}s/dto/patch-$SCHEMA_LOWCASE.dto.spec.ts
 rm src/${SCHEMA_LOWCASE}s/dto/update-$SCHEMA_LOWCASE.dto.spec.ts
-rm src/${SCHEMA_LOWCASE}/$SCHEMA_LOWCASE.controller.spec.ts
-rm src/${SCHEMA_LOWCASE}/$SCHEMA_LOWCASE.service.spec.ts
+rm src/${SCHEMA_LOWCASE}/${SCHEMA_LOWCASE}s.controller.spec.ts
+rm src/${SCHEMA_LOWCASE}/${SCHEMA_LOWCASE}s.service.spec.ts
