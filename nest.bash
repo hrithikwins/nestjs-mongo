@@ -7,10 +7,14 @@ SCHEMA_NAME=$1
 SCHEMA_DOCUMENT="${SCHEMA_NAME}Document"
 SCHEMA_SCHEMA="${SCHEMA_NAME}Schema"
 SCHEMA_LOWCASE=$(echo "$SCHEMA_NAME" | tr '[:upper:]' '[:lower:]')
-echo "$SCHEMA_NAME"
-echo "$SCHEMA_DOCUMENT"
-echo "$SCHEMA_SCHEMA"
-echo "$SCHEMA_LOWCASE"
+SCHEMA_CAPITALIZED="$(tr '[:lower:]' '[:upper:]' <<< ${SCHEMA_LOWCASE:0:1})${SCHEMA_LOWCASE:1}"
+
+echo "Original Schema Name: $SCHEMA_NAME"
+echo "Document Schema: $SCHEMA_DOCUMENT"
+echo "Schema Schema: $SCHEMA_SCHEMA"
+echo "Lowercase Schema: $SCHEMA_LOWCASE"
+echo "Capitalized Schema: $SCHEMA_CAPITALIZED"
+
 
 SCHEMA_PATH="src/${SCHEMA_LOWCASE}s/schemas/${SCHEMA_LOWCASE}.schema.ts"
 DTO_PATHC="src/${SCHEMA_LOWCASE}s/dto/create-${SCHEMA_LOWCASE}.dto.ts"
@@ -20,7 +24,7 @@ DTO_PATHU="src/${SCHEMA_LOWCASE}s/dto/update-${SCHEMA_LOWCASE}.dto.ts"
 nest g resource "${SCHEMA_LOWCASE}s"
 nest generate class "${SCHEMA_LOWCASE}s/dto/create-$SCHEMA_LOWCASE.dto"
 nest generate class "${SCHEMA_LOWCASE}s/dto/patch-$SCHEMA_LOWCASE.dto"
-nest generate class "${SCHEMA_LOWCASE}s/dto/update-$SCHEMA_LOWCASE.dto"
+# nest generate class "${SCHEMA_LOWCASE}s/dto/update-$SCHEMA_LOWCASE.dto"
 
 # Create a new schema file for MongoDB
 mkdir -p "src/${SCHEMA_LOWCASE}s/schemas" && touch "$SCHEMA_PATH"
@@ -45,7 +49,7 @@ export const $SCHEMA_SCHEMA = SchemaFactory.createForClass($SCHEMA_NAME);
 # Creating dto path
 echo "import { IsNotEmpty, IsString } from \"class-validator\";
 
-export class Create${SCHEMA_NAME}Dto {
+export class Create${SCHEMA_CAPITALIZED}Dto {
   @IsString()
   _id: string;
 
@@ -61,14 +65,14 @@ export class Create${SCHEMA_NAME}Dto {
 
 echo "import { PartialType } from \"@nestjs/mapped-types\";
 
-import { Create${SCHEMA_NAME}Dto } from \"./create-${SCHEMA_LOWCASE}.dto\";
+import { Create${SCHEMA_CAPITALIZED}Dto } from \"./create-${SCHEMA_LOWCASE}.dto\";
 
-export class Patch${SCHEMA_NAME}Dto extends PartialType(Create${SCHEMA_NAME}Dto) {}" > "$DTO_PATHP"
+export class Patch${SCHEMA_CAPITALIZED}Dto extends PartialType(Create${SCHEMA_CAPITALIZED}Dto) {}" > "$DTO_PATHP"
 
 echo "import { OmitType } from \"@nestjs/mapped-types\";
-import { Create${SCHEMA_NAME}Dto } from \"./create-${SCHEMA_LOWCASE}.dto\";
+import { Create${SCHEMA_CAPITALIZED}Dto } from \"./create-${SCHEMA_LOWCASE}.dto\";
 
-export class Update${SCHEMA_NAME}Dto extends OmitType(Create${SCHEMA_NAME}Dto, [\"_id\"] as const) {}" > "$DTO_PATHU"
+export class Update${SCHEMA_CAPITALIZED}Dto extends OmitType(Create${SCHEMA_CAPITALIZED}Dto, [\"_id\"] as const) {}" > "$DTO_PATHU"
 
 # Remove unnecessary files
 rm "src/${SCHEMA_LOWCASE}s/dto/create-$SCHEMA_LOWCASE.dto.spec.ts"
