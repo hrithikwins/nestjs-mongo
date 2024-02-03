@@ -7,6 +7,11 @@ SCHEMA_NAME=$1
 SCHEMA_DOCUMENT="${SCHEMA_NAME}Document"
 SCHEMA_SCHEMA="${SCHEMA_NAME}Schema"
 SCHEMA_LOWCASE=$(echo "$SCHEMA_NAME" | tr '[:upper:]' '[:lower:]')
+echo "$SCHEMA_NAME"
+echo "$SCHEMA_DOCUMENT"
+echo "$SCHEMA_SCHEMA"
+echo "$SCHEMA_LOWCASE"
+
 SCHEMA_PATH="src/${SCHEMA_LOWCASE}s/schemas/${SCHEMA_LOWCASE}.schema.ts"
 DTO_PATHC="src/${SCHEMA_LOWCASE}s/dto/create-${SCHEMA_LOWCASE}.dto.ts"
 DTO_PATHP="src/${SCHEMA_LOWCASE}s/dto/patch-${SCHEMA_LOWCASE}.dto.ts"
